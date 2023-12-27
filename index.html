@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    
+    <main>
+        <div class="row">
+            <input type="color" class="light" value="#ffffff">
+            <input type="color" class="dark">
+            <select class="sizes">
+                <option value="100">100 x 100</option>
+                <option value="200">200 x 200</option>
+                <option value="300">300 x 300</option>
+                <option selected value="400">400 x 400</option>
+                <option value="500">500 x 500</option>
+                <option value="600">600 x 600</option>
+                <option value="700">700 x 700</option>
+                <option value="800">800 x 800</option>
+                <option value="900">900 x 900</option>
+                <option value="1000">1000 x 1000</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" class="qr-text" placeholder="Enter QR code value">
+            <div id="qr-code">   
+            </div>
+            <div class="action-container">
+                <a href="" class="download btn" download="QR code">
+                    <span>Download</span>
+                    <i class="uil uil-download-alt"></i>
+                </a>
+                <button class="share-btn btn">
+                    <span>Share</span>
+                    <i class="uil uil-share"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
